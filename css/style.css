@@ -90,3 +90,9 @@ body {
 .navbar-right {
   float: right;
 }
+
+.navbar img {
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
