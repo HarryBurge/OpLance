@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oplance Postings</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<section>
+			<div class="navbar" id="topnav">
+				<a  href="https://www.qries.com/">
+					<img src="https://harryburge.github.io/OpLance/imgs/OpLance_LogoText.png" width="150" height="30">
+				</a>
+
+				<a href="#aboutus"><span>About Us</span></a>
+				<a href="/postings">Postings</a>
+				<a href="/contactus">Contact Us</a>
+
+				<div class="navbar-right">
+					<img src="https://harryburge.github.io/OpLance/imgs/signinicon.png" height="58">
+					<a href="/signin">Sign In</a>
+				</div>
+			</div>
+        </section>
+
+        <main>
+            
+            <section>
+                <div class="posting">
+                    
+                </div>
+            </section>
+		</main>
+        
+		<script>
+			/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("topnav").style.top = "0";
+			} else {
+				document.getElementById("topnav").style.top = "-62px";
+			}
+			prevScrollpos = currentScrollPos;
+			} 
+		</script>
+
+	</body>
+</html>
